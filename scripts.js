@@ -2,13 +2,9 @@
     'use strict';
 
     const $emailField = doc.querySelector('input[name="email"');
-    const $phoneField = doc.querySelector('input[name="phone"]');
-    const $submitBtn = doc.querySelector('input[type="submit"');
 
     function init(){
-        $submitBtn.addEventListener('click', handleSubmit, false);
         $emailField.addEventListener('change', handleEmailChange, false);
-        $phoneField.addEventListener('keypress', handlePhoneType, false);
     }
     
     function isEmailValid(email){
@@ -18,16 +14,14 @@
 
     function handleEmailChange(){
         const email = $emailField.value;
-        isEmailValid(email) ? '' : clearEmailField();
+        if(!isEmailValid(email)){
+            clearEmailField();
+        }
     }
 
     function clearEmailField(){
-        alert('Email not valid!');
         $emailField.value = '';
-    }
-
-    function handleSubmit(){
-        handleEmailChange();
+        alert("Email inválido!");
     }
 
     init();
