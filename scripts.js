@@ -9,7 +9,7 @@
     
     function isEmailValid(email){
         const regEx = /[\w\+\.]+@\w+\.\w{2,}(?:\.\w{0,2})?/;
-        return email.match(regEx)[0] === email;
+        return regEx.test(email);
     }
 
     function handleEmailChange(){
