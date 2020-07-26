@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-me</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://kit.fontawesome.com/6e502b8152.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="contactInfo"> 
+                <h2>Contact Info</h2>
+                <ul class="info">
+                    <li>
+                        <span><i class="fas fa-map-marker-alt"></i></span>
+                        <span>11704.730 - Vila Mirim<br />
+                                Praia Grande, SP<br />
+                                Brazil</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-envelope"></i></span>
+                        <span>freirart.contato@gmail.com</span>
+                    </li>
+                    <li>
+                        <span><i class="fas fa-phone-alt"></i></span>
+                        <span>+55 (13)99625-4629</span>
+                    </li>
+                </ul>
+                <ul class="socialMedia">
+                    <li><a href="https://www.github.com/freirart" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/freirart" target="_blank"><i class="fab fa-linkedin fa-lg"></i></a></li>
+                    <li><a href="https://www.instagram.com/freirart" target="_blank"><i class="fab fa-instagram fa-lg"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5513996254629&text=Olá!" target="_blank"><i class="fab fa-whatsapp fa-lg"></i></a></li>
+                </ul>
+            </div>
+            <div class="contactForm">
+                <h2>Send a Message</h2>
+                <form action="mailto:freirart.contato@gmail.com" method="get" enctype="text/plain">
+                    <div class="inputBox w50">
+                        <input type="text" name="firstName" required />
+                        <span>First Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="lastName" required />
+                        <span>Last Name</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="email" required />
+                        <span>E-mail</span>
+                    </div>
+                    <div class="inputBox w50">
+                        <input type="text" name="phone" required />
+                        <span>Phone Number</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                        <span>Write your message here...</span>
+                    </div>
+                    <div class="inputBox w100">
+                        <input type="submit" name="submit" value="Send" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
