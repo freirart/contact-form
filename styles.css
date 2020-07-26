@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap');
 
 *{
     margin: 0;
@@ -13,6 +13,7 @@ section{
     align-items: center;
     position: relative;
     min-height: 100vh;
+    width: 100%;
     background: #2b102d;
 }
 section::before{
@@ -143,6 +144,7 @@ section .container .contactForm form .inputBox textarea{
     border: none;
     border-bottom: 1px solid #777;
     outline: none;
+    transition: 0.5s;
 }
 section .container .contactForm form .inputBox textarea{
     min-height: 120px;
@@ -153,7 +155,7 @@ section .container .contactForm form .inputBox span{
     padding: 5px 0;
     font-size: 18px;
     font-weight: 300;
-    color: #333;
+    color: #bababa;
     transition: 0.5s;
     pointer-events: none;
 }
@@ -163,9 +165,13 @@ section .container .contactForm form .inputBox input:valid ~ span,
 section .container .contactForm form .inputBox textarea:valid ~ span{
     transform: translateY(-20px);
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 1px;
     color: #af4bfc;
+}
+section .container .contactForm form .inputBox input:valid,
+section .container .contactForm form .inputBox textarea:valid{
+    border-bottom: 1px solid #aa01bc;
 }
 section .container .contactForm form .inputBox input[type="submit"]{
     position: relative;
