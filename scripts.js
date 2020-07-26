@@ -14,9 +14,8 @@
 
     function handleEmailChange(){
         const email = $emailField.value;
-        if(!isEmailValid(email)){
+        if(!isEmailValid(email))
             clearEmailField();
-        }
     }
 
     function clearEmailField(){
