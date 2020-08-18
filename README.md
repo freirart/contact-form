@@ -1,5 +1,5 @@
 <h1 align="center"> 
-  <img width="800" alt="preview" src="https://raw.githubusercontent.com/freirart/contact-form/master/preview-contact-form.gif" /><br />
+  <img alt="preview" src="https://raw.githubusercontent.com/freirart/contact-form/master/contact-form.gif" /><br />
   📞 Contact Form 📨
 </h1>
 
